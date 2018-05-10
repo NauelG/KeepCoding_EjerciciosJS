@@ -1,0 +1,19 @@
+form {
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-top: 35px;
+}
+
+.card {
+    margin-top: 15px;
+}
+
+.disabled {
+    display: none;
+}
+
+.form-group {
+    padding: 10px;
+}
