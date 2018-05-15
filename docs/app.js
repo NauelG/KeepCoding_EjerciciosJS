@@ -3,6 +3,7 @@ function area() {
     let result = Math.round((Math.PI * Math.pow(radius, 2) * 10)) / 10;
     let stringResult = `El área de un círculo de radio ${radius} es ${result}`;
     publicResult('radiusCalc', stringResult);
+    return false;
 }
 
 function operate() {
@@ -43,6 +44,42 @@ function compareValues() {
     let b = Number(document.getElementById('compareValue2').value);
     let stringResult = `Resultados de las comparaciones: ${a}<${b} -> ${a<b} | ${a}>${b} -> ${a>b} | ${a}=${b} -> ${a===b} | ${a}≠${b} -> ${a!==b}`;
     publicResult('compareValues', stringResult);
+}
+
+function averageResult() {
+    let a = Number(document.getElementById('averageResult1').value);
+    let b = Number(document.getElementById('averageResult2').value);
+    let c = Number(document.getElementById('averageResult3').value);
+    let average = (a + b + c) / 3;
+    let result;
+    if (average < 5) result = 'No Apto';
+    else result = 'Apto';
+
+    publicResult('averageResult', result);
+}
+
+function intType() {
+    let int = Number(document.getElementById('intValue').value);
+    let type;
+    if (int < 0) {
+        if (int % 2 === 0) type = 'Negativo par';
+        else type = 'Negativo impar';
+    } else if (int > 0) {
+        if (int % 2 === 0) type = 'Positivo par';
+        else type = 'Positivo impar';
+    } else type = 'Cero';
+
+    publicResult('intType', type);
+}
+
+function selectCurrent() {
+    let value = Number(document.getElementById('currentValue').value);
+    let operation = document.getElementById('convertType').value;
+    let stringResult;
+    if (operation === 'eurUsd') stringResult = `${value}€ equivale a $${Math.round((1.006*value)*100)/100} USD`;
+    else stringResult = `$${value} USD equivale a ${Math.round((value/1.006)*100)/100}€`;
+
+    publicResult('selectCurrent', stringResult);
 }
 
 // Aux Functions

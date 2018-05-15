@@ -1,3 +1,9 @@
+.card {
+    width: 22rem;
+    display: inline-table;
+    height: grid;
+}
+
 form {
     margin-bottom: 15px;
 }

@@ -16,6 +16,9 @@
 
     <div class="container">
 
+        <h3>Primera parte</h3>
+        <p>entrada/salida, variables, tipos de datos y operaciones lógico/aritméticas</p>
+
         <div class="card">
             <div class="card-body" id="radiusCalc">
                 <h5 class="card-title">Area de una circunferencia</h5>
@@ -24,7 +27,7 @@
                         <label for="radius">Introduce el radio</label>
                         <input type="number" class="form-control" id="radius">
                     </div>
-                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="area()" return false>Calcular</button>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="area()">Calcular</button>
                 </form>
                 <div class="alert alert-primary disabled" role="alert">
                 </div>
@@ -34,15 +37,15 @@
         <div class="card">
             <div class="card-body" id="operations">
                 <h5 class="card-title">Operaciones con dos valores</h5>
-                <form>
+                <form action="#">
                     <div class="form-group">
-                        <label for="radius">Introduce el primer valor</label>
+                        <label for="valueA">Introduce el primer valor</label>
                         <input type="number" class="form-control" id="valueA">
-                        <label for="radius">Introduce el segundo valor</label>
+                        <label for="valueB">Introduce el segundo valor</label>
                         <input type="number" class="form-control" id="valueB">
                     </div>
                     <button type="submit" class="btn btn-outline-primary btn-block" onclick="operate()">Calcular</button>
-                </form>
+                </form action="#">
                 <div class="alert alert-primary disabled" role="alert">
                 </div>
             </div>
@@ -51,9 +54,9 @@
         <div class="card">
             <div class="card-body" id="convertCurrent">
                 <h5 class="card-title">Convierte € a USD</h5>
-                <form>
+                <form action="#">
                     <div class="form-group">
-                        <label for="radius">Introduce un valor en €</label>
+                        <label for="currentInput">Introduce un valor en €</label>
                         <input type="number" class="form-control" id="currentInput">
                     </div>
                     <button type="submit" class="btn btn-outline-primary btn-block" onclick="convertCurrent()">Calcular</button>
@@ -66,17 +69,17 @@
         <div class="card">
             <div class="card-body" id="average">
                 <h5 class="card-title">Media de tres valores</h5>
-                <form>
+                <form action="#">
                     <div class="form-group">
-                        <label for="radius">Introduce el primer valor</label>
+                        <label for="average1">Introduce el primer valor</label>
                         <input type="number" class="form-control" id="average1">
                     </div>
                     <div class="form-group">
-                        <label for="radius">Introduce el segundo valor</label>
+                        <label for="average2">Introduce el segundo valor</label>
                         <input type="number" class="form-control" id="average2">
                     </div>
                     <div class="form-group">
-                        <label for="radius">Introduce el tercer valor</label>
+                        <label for="average3">Introduce el tercer valor</label>
                         <input type="number" class="form-control" id="average3">
                     </div>
                     <button type="submit" class="btn btn-outline-primary btn-block" onclick="average()">Calcular</button>
@@ -89,13 +92,13 @@
         <div class="card">
             <div class="card-body" id="compareDate">
                 <h5 class="card-title">Comparar meses y años</h5>
-                <form>
+                <form action="#">
                     <div class="form-group">
-                        <label for="radius">Introduce la primera fecha</label>
+                        <label for="date1">Introduce la primera fecha</label>
                         <input type="date" class="form-control" id="date1">
                     </div>
                     <div class="form-group">
-                        <label for="radius">Introduce la segunda fecha</label>
+                        <label for="date2">Introduce la segunda fecha</label>
                         <input type="date" class="form-control" id="date2">
                     </div>
                     <button type="submit" class="btn btn-outline-primary btn-block" onclick="compareDate()">Calcular</button>
@@ -108,11 +111,11 @@
         <div class="card">
             <div class="card-body" id="compareValues">
                 <h5 class="card-title">Relaciona dos valores</h5>
-                <form>
+                <form action="#">
                     <div class="form-group">
-                        <label for="radius">Introduce el primer valor</label>
+                        <label for="compareValue1">Introduce el primer valor</label>
                         <input type="number" class="form-control" id="compareValue1">
-                        <label for="radius">Introduce el segundo valor</label>
+                        <label for="compareValue2">Introduce el segundo valor</label>
                         <input type="number" class="form-control" id="compareValue2">
                     </div>
                     <button type="submit" class="btn btn-outline-primary btn-block" onclick="compareValues()">Calcular</button>
@@ -121,6 +124,75 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <div class="container">
+
+        <h3>Segunda parte</h3>
+        <p>Condicionales</p>
+
+        <div class="card">
+            <div class="card-body" id="averageResult">
+                <h5 class="card-title">Resultado de la media de tres valores</h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="averageResult1">Introduce el primer valor</label>
+                        <input type="number" class="form-control" id="averageResult1">
+                    </div>
+                    <div class="form-group">
+                        <label for="averageResult2">Introduce el segundo valor</label>
+                        <input type="number" class="form-control" id="averageResult2">
+                    </div>
+                    <div class="form-group">
+                        <label for="averageResult3">Introduce el tercer valor</label>
+                        <input type="number" class="form-control" id="averageResult3">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="averageResult()">Calcular</button>
+                </form>
+                <div class="alert alert-primary disabled" role="alert">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" id="intType">
+                <h5 class="card-title">Analiza un número entero</h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="intValue">Itroduce un número entero</label>
+                        <input type="number" class="form-control" id="intValue">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="intType()">Calcular</button>
+                </form>
+                <div class="alert alert-primary disabled" role="alert">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body" id="selectCurrent">
+                <h5 class="card-title">Conversión de monedas (USD / EUR)</h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="currentValue">Introduce el valor a convertir</label>
+                        <input type="number" class="form-control" id="currentValue">
+                    </div>
+                    <div class="form-group">
+                        <label for="convertType">Selecciona el tipo de conversión</label>
+                        <select class="form-control" id="convertType">
+                            <option value="eurUsd">EUR -> USD</option>
+                            <option value="usdEur">USD -> EUR</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="selectCurrent()">Calcular</button>
+                </form>
+                <div class="alert alert-primary disabled" role="alert">
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
 
