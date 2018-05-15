@@ -82,6 +82,22 @@ function selectCurrent() {
     publicResult('selectCurrent', stringResult);
 }
 
+function starWarsMovie() {
+    let movie = document.getElementById('movieNumber').value;
+    let stringResult;
+    if (movie === '1' || movie === 'I') stringResult = 'StarWars I - La amenaza fantasma';
+    else if (movie === '2' || movie === 'II') stringResult = 'StarWars II - El ataque de los clones';
+    else if (movie === '3' || movie === 'III') stringResult = 'StarWars III - La venganza de los Sith';
+    else if (movie === '4' || movie === 'IV') stringResult = 'StarWars IV - Una nueva esperanza';
+    else if (movie === '5' || movie === 'V') stringResult = 'StarWars V - El imperio contraataca';
+    else if (movie === '6' || movie === 'VI') stringResult = 'StarWars VI - El retorno del Jedi';
+    else if (movie === '7' || movie === 'VII') stringResult = 'StarWars VII - El despertar de la Fuerza';
+    else if (movie === '8' || movie === 'VIII') stringResult = 'StarWars VIII - Los últimos Jedi';
+    else stringResult = 'La película introducida no es válida';
+
+    publicResult('starWarsMovie', stringResult);
+}
+
 // Aux Functions
 function publicResult(parentId, text) {
     let elementResult = document.getElementById(parentId).lastElementChild;
