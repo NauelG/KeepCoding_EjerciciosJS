@@ -98,6 +98,25 @@ function starWarsMovie() {
     publicResult('starWarsMovie', stringResult);
 }
 
+function minMax() {
+    let a = Number(document.getElementById('minMax1').value);
+    let b = Number(document.getElementById('minMax2').value);
+    let c = Number(document.getElementById('minMax3').value);
+    let stringResult = `El mayor es ${Math.max(a, b, c)}, el menor es ${Math.min(a, b, c)}`;
+
+    publicResult('minMax', stringResult);
+}
+
+function letterType() {
+    let letter = document.getElementById('letter').value.toUpperCase();
+    let vocals = ['A', 'E', 'I', 'O', 'U'];
+    let stringResult;
+    if (vocals.indexOf(letter) !== -1) stringResult = `${letter} es letra vocal`;
+    else stringResult = `${letter} es letra consonante`;
+
+    publicResult('letterType', stringResult);
+}
+
 // Aux Functions
 function publicResult(parentId, text) {
     let elementResult = document.getElementById(parentId).lastElementChild;

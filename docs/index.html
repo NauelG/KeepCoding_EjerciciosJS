@@ -207,14 +207,53 @@
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-body" id="minMax">
+                <h5 class="card-title">Devuelve el mayor y el menor de tres valores</h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="minMax1">Introduce el primer valor</label>
+                        <input type="number" class="form-control" id="minMax1">
+                    </div>
+                    <div class="form-group">
+                        <label for="minMax2">Introduce el segundo valor</label>
+                        <input type="number" class="form-control" id="minMax2">
+                    </div>
+                    <div class="form-group">
+                        <label for="minMax3">Introduce el tercer valor</label>
+                        <input type="number" class="form-control" id="minMax3">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="minMax()">Calcular</button>
+                </form>
+                <div class="alert alert-primary disabled" role="alert">
+                </div>
+            </div>
+        </div>
 
-
+        <div class="card">
+            <div class="card-body" id="letterType">
+                <h5 class="card-title">Devuelve el tipo de letra (Vocal o Consonante)</h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="letter">Itroduce una letra</label>
+                        <input type="text" class="form-control" id="letter">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-block" onclick="letterType()">Calcular</button>
+                </form>
+                <div class="alert alert-primary disabled" role="alert">
+                </div>
+            </div>
+        </div>
 
     </div>
 
+    <div class="container">
 
+        <h3>Tercera parte</h3>
+        <p>Listas, tuplas y diccionarios</p>
 
     </div>
+
     <!-- Custom JS files -->
     <script src="./app.js"></script>
     <!-- Bootstrap JS files -->
